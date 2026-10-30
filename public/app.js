@@ -50,9 +50,26 @@ function shell(inner, active) {
   nav.push(['#/alerts', 'Alerts', 'alerts']);
   if (me.role !== 'institution') nav.push(['#/audit', 'Audit trail', 'audit']);
   if (me.role === 'admin') nav.push(['#/admin', 'Admin', 'admin']);
-  return `<div class="shell"><aside><div class="brand"><b>FDR Portal</b><span>Security deposits · AICTE</span></div>
-  <nav>${nav.map(([h, t, k]) => `<a href="${h}" class="${active === k ? 'on' : ''}">${t}${k === 'alerts' && unread ? `<span class="badge-n">${unread}</span>` : ''}</a>`).join('')}</nav>
-  <div class="me"><b>${esc(me.name)}</b><br>${me.role}<br><button id="out">Sign out</button></div></aside><main>${inner}</main></div>`;
+  return `<div class="shell">
+  <aside id="sidebar">
+    <div class="brand">
+      <div class="brand-text"><b>FDR Portal</b><span>Security deposits · AICTE</span></div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+    <div class="side-content" id="sideContent">
+      <nav id="navMenu">${nav.map(([h, t, k]) => `<a href="${h}" class="${active === k ? 'on' : ''}">${t}${k === 'alerts' && unread ? `<span class="badge-n">${unread}</span>` : ''}</a>`).join('')}</nav>
+      <div class="me">
+        <b>${esc(me.name)}</b>
+        <div class="role-tag">${esc(me.role)}</div>
+        <button id="out">Sign out</button>
+      </div>
+    </div>
+  </aside>
+  <main>${inner}</main></div>`;
 }
 
 function loginView() {
@@ -303,6 +320,23 @@ async function render() {
     else if (route === 'admin' && me.role === 'admin') { app.innerHTML = await adminView(); bindAdmin(); }
     else { app.innerHTML = await dashboardView(); bindRows(); }
     const o = $('#out'); if (o) o.onclick = logout;
+    const nt = $('#navToggle');
+    if (nt) {
+      nt.onclick = e => {
+        e.stopPropagation();
+        const sc = $('#sideContent');
+        const open = sc.classList.toggle('open');
+        nt.classList.toggle('active', open);
+        nt.setAttribute('aria-expanded', open);
+      };
+    }
+    document.querySelectorAll('#navMenu a').forEach(a => {
+      a.onclick = () => {
+        const sc = $('#sideContent');
+        if (sc) sc.classList.remove('open');
+        if (nt) { nt.classList.remove('active'); nt.setAttribute('aria-expanded', 'false'); }
+      };
+    });
     window.scrollTo(0, 0);
   } catch (e) { if (localStorage.getItem('tok')) { app.innerHTML = shell(`<div class="card"><h2>Something went wrong</h2><p class="err">${esc(e.message)}</p><a class="btn" href="#/dashboard">Go to Today</a></div>`, ''); const o = $('#out'); if (o) o.onclick = logout; } }
 }
