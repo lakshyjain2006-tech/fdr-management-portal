@@ -1,0 +1,31 @@
+// End-to-end smoke test: node test/smoke.js  (starts the app on a temp port, uses a scratch DB copy)
+process.env.PORT = 3999;
+const app = require('../server.js'); const srv = app.listen(3999);
+const B = 'http://localhost:3999/api';
+const j = async (p, o = {}, t) => { const r = await fetch(B + p, { ...o, headers: { ...(o.body && !(o.body instanceof FormData) ? { 'Content-Type': 'application/json' } : {}), ...(t ? { Authorization: 'Bearer ' + t } : {}) }, body: o.body instanceof FormData ? o.body : o.body && JSON.stringify(o.body) }); return { s: r.status, d: await r.json().catch(() => null) }; };
+const login = async e => (await j('/auth/login', { method: 'POST', body: { email: e, password: 'demo123' } })).d.token;
+let fails = 0; const ok = (c, m) => { console.log((c ? 'PASS ' : 'FAIL ') + m); if (!c) fails++; };
+(async () => {
+  const [inst, off, adm] = await Promise.all(['bit@demo.in', 'officer@demo.in', 'admin@demo.in'].map(login));
+  ok((await j('/fdrs')).s === 401, 'unauthenticated blocked');
+  ok((await j('/admin/users', {}, inst)).s === 403, 'institution cannot use admin API');
+  const mk = (n, extra = {}) => { const fd = new FormData(); Object.entries({ fdrNumber: n, bankName: 'SBI', amount: 900000, issueDate: '2024-01-01', maturityDate: '2026-12-31', ...extra }).forEach(([k, v]) => fd.append(k, v)); fd.append('document', new Blob(['%PDF-1.4 test ' + n], { type: 'application/pdf' }), 'x.pdf'); return fd; };
+  const a = await j('/fdrs', { method: 'POST', body: mk('T-001') }, inst); ok(a.s === 201 && a.d.status === 'PENDING_OFFICER', 'submit FDR -> pending officer');
+  const dup = await j('/fdrs', { method: 'POST', body: mk('T-001') }, await login('sagar@demo.in')); ok(dup.s === 409, 'duplicate FDR blocked');
+  const bad = await j('/fdrs', { method: 'POST', body: mk('T-002', { maturityDate: '2023-01-01' }) }, inst); ok(bad.d.status === 'FLAGGED', 'impossible dates flagged');
+  const fake = new FormData(); fake.append('fdrNumber', 'T-3'); fake.append('bankName', 'X'); fake.append('amount', 1); fake.append('issueDate', '2024-01-01'); fake.append('maturityDate', '2027-01-01'); fake.append('document', new Blob(['not a pdf'], { type: 'application/pdf' }), 'f.pdf');
+  ok((await j('/fdrs', { method: 'POST', body: fake }, inst)).s === 400, 'fake file content rejected');
+  const id = a.d.id;
+  ok((await j(`/fdrs/${id}/verify`, { method: 'POST', body: { decision: 'approve' } }, inst)).s === 403, 'institution cannot verify');
+  ok((await j(`/fdrs/${id}/verify`, { method: 'POST', body: { decision: 'approve', observation: 'ok' } }, off)).d.status === 'OFFICER_VERIFIED', 'officer verifies');
+  const bv = await j(`/fdrs/${id}/bank-verify`, { method: 'POST', body: {} }, off); ok(bv.d.status === 'ACTIVE' && bv.d.bankStatus === 'VERIFIED', 'bank verification (mock) -> ACTIVE');
+  ok((await j(`/fdrs/${id}/release-request`, { method: 'POST', body: { reason: 'Course closed' } }, inst)).d.status === 'RELEASE_REQUESTED', 'release requested');
+  ok((await j(`/fdrs/${id}/release-decision`, { method: 'POST', body: { decision: 'approve', remarks: 'ok' } }, adm)).d.status === 'RELEASE_RECOMMENDED', 'level-1 approval');
+  ok((await j(`/fdrs/${id}/release-decision`, { method: 'POST', body: { decision: 'approve' } }, adm)).s === 400, 'premature release needs remarks');
+  ok((await j(`/fdrs/${id}/release-decision`, { method: 'POST', body: { decision: 'approve', remarks: 'Authorised' } }, off)).s === 403, 'officer cannot give final approval');
+  ok((await j(`/fdrs/${id}/release-decision`, { method: 'POST', body: { decision: 'approve', remarks: 'Authorised' } }, adm)).d.status === 'CLOSED', 'final approval -> CLOSED');
+  const au = await j('/audit', {}, adm); ok(au.d.integrity.ok, 'audit chain intact (' + au.d.integrity.count + ' entries)');
+  const dash = await j('/dashboard', {}, off); ok(dash.d.overdue.length >= 1 && dash.d.needsAction.length >= 1, 'dashboard lists exceptions');
+  const al = await j('/notifications', {}, inst); ok(al.d.length > 0, 'institution has alerts');
+  console.log(fails ? `\n${fails} FAILED` : '\nAll checks passed'); srv.close(); process.exit(fails ? 1 : 0);
+})();
