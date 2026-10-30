@@ -6,7 +6,7 @@
       "email": "admin@demo.in",
       "role": "admin",
       "active": true,
-      "passwordHash": "$2a$08$WZOgJKTrEKkbDskW.gD/tOah/5mapLilnGPgIzJas7gTONsc0v7x6"
+      "passwordHash": "$2a$08$zw8YeafyFv.DGIVejO20IepIb4rPy4J8cNJSIL3ykXper6dmJOlWC"
     },
     {
       "id": "U-officer",
@@ -14,7 +14,7 @@
       "email": "officer@demo.in",
       "role": "officer",
       "active": true,
-      "passwordHash": "$2a$08$ANDnxiuwWxD0r.1lDMX7zeL9t4vB.YartbnZQELOTzjUxe7Ob39xW"
+      "passwordHash": "$2a$08$dIaymyst4JydMJVGj2ohDubwTQyYIInefzicnBvtOoXDvmCs5SFFS"
     },
     {
       "id": "U-inst1",
@@ -23,7 +23,7 @@
       "role": "institution",
       "institutionName": "Bhopal Institute of Technology",
       "active": true,
-      "passwordHash": "$2a$08$W1q3TTnZ9R35dILuO187g.sfZMv9W1nG8WyIBEXw7zp.ZhkelluhO"
+      "passwordHash": "$2a$08$ZSRcM.I.j0r/KFhv.YRieuK33ynItgzgOn1w6u7l7gl7RUt2P7cNy"
     },
     {
       "id": "U-inst2",
@@ -32,7 +32,7 @@
       "role": "institution",
       "institutionName": "Sagar College of Engineering",
       "active": true,
-      "passwordHash": "$2a$08$36GtNK6Lkk9H5JYF5VYDrOx8iPxzRAzYj3oCHjpPwxSd6aHMq416S"
+      "passwordHash": "$2a$08$.MHZjI5ForDgdwPs6H04se.Tb6GFBPLwNsVkArSMSdqo.zP3OYwIy"
     }
   ],
   "fdrs": [
@@ -52,17 +52,15 @@
       "bankReference": "MOCK-SEED",
       "file": {
         "originalName": "FDR-scan.pdf",
-        "storedName": "doc-30bcac79.pdf",
+        "storedName": "doc-fa7f1619.pdf",
         "size": 396,
         "mime": "application/pdf",
         "sha256": "6d665d0f243a30050e7dee174db6ec9629832dff4bd9be526db0577c98ed1b4a"
       },
       "discrepancies": [],
-      "alertsSent": [
-        90
-      ],
+      "alertsSent": [],
       "escalations": [],
-      "createdAt": "2026-10-30T08:56:29.660Z"
+      "createdAt": "2026-10-30T18:11:12.566Z"
     },
     {
       "id": "FDR-0002",
@@ -80,21 +78,15 @@
       "bankReference": "MOCK-SEED",
       "file": {
         "originalName": "FDR-scan.pdf",
-        "storedName": "doc-c0216e23.pdf",
+        "storedName": "doc-98f249f9.pdf",
         "size": 396,
         "mime": "application/pdf",
         "sha256": "fd443a91abead5a8f7fea7f558a4593107befe378e06268fc73a7f751aa24b66"
       },
       "discrepancies": [],
-      "alertsSent": [
-        30,
-        60,
-        90
-      ],
-      "escalations": [
-        "OFFICER"
-      ],
-      "createdAt": "2026-10-30T08:56:29.661Z"
+      "alertsSent": [],
+      "escalations": [],
+      "createdAt": "2026-10-30T18:11:12.572Z"
     },
     {
       "id": "FDR-0003",
@@ -112,23 +104,15 @@
       "bankReference": "MOCK-SEED",
       "file": {
         "originalName": "FDR-scan.pdf",
-        "storedName": "doc-e4cfac67.pdf",
+        "storedName": "doc-42f5a618.pdf",
         "size": 397,
         "mime": "application/pdf",
         "sha256": "f4df8430a11dfb5fe249409ce3aa8c6cb349c4af18108a5bb62454ef9b5c3d43"
       },
       "discrepancies": [],
-      "alertsSent": [
-        7,
-        30,
-        60,
-        90
-      ],
-      "escalations": [
-        "OFFICER",
-        "SENIOR"
-      ],
-      "createdAt": "2026-10-30T08:56:29.662Z"
+      "alertsSent": [],
+      "escalations": [],
+      "createdAt": "2026-10-30T18:11:12.576Z"
     },
     {
       "id": "FDR-0004",
@@ -146,24 +130,15 @@
       "bankReference": "MOCK-SEED",
       "file": {
         "originalName": "FDR-scan.pdf",
-        "storedName": "doc-0e375419.pdf",
+        "storedName": "doc-26ed97ca.pdf",
         "size": 396,
         "mime": "application/pdf",
         "sha256": "709edc4b21c573c8a7ce90509d63a64723e157dd50f2b350d15903ef4820e889"
       },
       "discrepancies": [],
-      "alertsSent": [
-        7,
-        30,
-        60,
-        90
-      ],
-      "escalations": [
-        "OFFICER",
-        "SENIOR",
-        "OVERDUE"
-      ],
-      "createdAt": "2026-10-30T08:56:29.663Z"
+      "alertsSent": [],
+      "escalations": [],
+      "createdAt": "2026-10-30T18:11:12.580Z"
     },
     {
       "id": "FDR-0005",
@@ -181,7 +156,7 @@
       "bankReference": "MOCK-SEED",
       "file": {
         "originalName": "FDR-scan.pdf",
-        "storedName": "doc-124048ce.pdf",
+        "storedName": "doc-2ae8bbea.pdf",
         "size": 396,
         "mime": "application/pdf",
         "sha256": "972b4ed622751fbaad229c719a3bd1cf11a34347b84410dea462c34e0454a483"
@@ -189,7 +164,7 @@
       "discrepancies": [],
       "alertsSent": [],
       "escalations": [],
-      "createdAt": "2026-10-30T08:56:29.664Z"
+      "createdAt": "2026-10-30T18:11:12.584Z"
     },
     {
       "id": "FDR-0006",
@@ -207,7 +182,7 @@
       "bankReference": null,
       "file": {
         "originalName": "FDR-scan.pdf",
-        "storedName": "doc-e45b0684.pdf",
+        "storedName": "doc-dc621bea.pdf",
         "size": 396,
         "mime": "application/pdf",
         "sha256": "c78f4a5a052b54027369dc420e924d078dc16dd8250c15d12b09f14660cea75e"
@@ -215,7 +190,7 @@
       "discrepancies": [],
       "alertsSent": [],
       "escalations": [],
-      "createdAt": "2026-10-30T08:56:29.665Z"
+      "createdAt": "2026-10-30T18:11:12.589Z"
     },
     {
       "id": "FDR-0007",
@@ -233,7 +208,7 @@
       "bankReference": null,
       "file": {
         "originalName": "FDR-scan.pdf",
-        "storedName": "doc-41266075.pdf",
+        "storedName": "doc-0a49f29a.pdf",
         "size": 397,
         "mime": "application/pdf",
         "sha256": "675c69261da414947efc8d1ef8ff62b4a659369a9d23ad4657772c846578d01a"
@@ -247,105 +222,13 @@
       ],
       "alertsSent": [],
       "escalations": [],
-      "createdAt": "2026-10-30T08:56:29.665Z"
-    },
-    {
-      "id": "FDR-0008",
-      "institutionId": "U-inst1",
-      "institutionName": "Bhopal Institute of Technology",
-      "fdrNumber": "T-001",
-      "bankName": "SBI",
-      "branch": "",
-      "amount": 900000,
-      "issueDate": "2024-01-01",
-      "maturityDate": "2026-12-31",
-      "purpose": "AICTE security deposit",
-      "bankStatus": "VERIFIED",
-      "bankReference": "MOCK-MVV4NLA8",
-      "file": {
-        "originalName": "x.pdf",
-        "storedName": "doc-75885436.pdf",
-        "size": 19,
-        "mime": "application/pdf",
-        "sha256": "7602cdba86c2274615743dafcf46456dc9d2e827b9af5b4872097a96b4598b41"
-      },
-      "alertsSent": [
-        90
-      ],
-      "escalations": [],
-      "createdAt": "2026-10-30T15:28:52.730Z",
-      "discrepancies": [],
-      "status": "CLOSED",
-      "officerObservation": "ok",
-      "bankVerifiedAt": "2026-10-30T15:28:53.120Z",
-      "release": {
-        "reason": "Course closed",
-        "requestedAt": "2026-10-30T15:28:53.139Z",
-        "premature": true,
-        "approvals": [
-          {
-            "level": 1,
-            "by": "Dr. Meera Iyer (Authority)",
-            "at": "2026-10-30T15:28:53.153Z",
-            "remarks": "ok"
-          },
-          {
-            "level": 2,
-            "by": "Dr. Meera Iyer (Authority)",
-            "at": "2026-10-30T15:28:53.171Z",
-            "remarks": "Authorised"
-          }
-        ]
-      },
-      "closedAt": "2026-10-30T15:28:53.171Z"
-    },
-    {
-      "id": "FDR-0009",
-      "institutionId": "U-inst1",
-      "institutionName": "Bhopal Institute of Technology",
-      "fdrNumber": "T-002",
-      "bankName": "SBI",
-      "branch": "",
-      "amount": 900000,
-      "issueDate": "2024-01-01",
-      "maturityDate": "2023-01-01",
-      "purpose": "AICTE security deposit",
-      "bankStatus": "PENDING",
-      "bankReference": null,
-      "file": {
-        "originalName": "x.pdf",
-        "storedName": "doc-efeda519.pdf",
-        "size": 19,
-        "mime": "application/pdf",
-        "sha256": "72ce6210db30305f2d1b07aef8063a05422f8e1edad09418c6f85bb30b8c8f57"
-      },
-      "alertsSent": [],
-      "escalations": [],
-      "createdAt": "2026-10-30T15:28:52.788Z",
-      "discrepancies": [
-        {
-          "code": "IMPOSSIBLE_DATES",
-          "severity": "high",
-          "msg": "Maturity date is not after the issue date."
-        },
-        {
-          "code": "ALREADY_MATURED",
-          "severity": "medium",
-          "msg": "FDR has already matured."
-        },
-        {
-          "code": "SHORT_TENURE",
-          "severity": "low",
-          "msg": "Tenure is under one year - confirm it meets AICTE requirements."
-        }
-      ],
-      "status": "FLAGGED"
+      "createdAt": "2026-10-30T18:11:12.591Z"
     }
   ],
   "audit": [
     {
       "seq": 1,
-      "at": "2026-10-30T08:56:29.660Z",
+      "at": "2026-10-30T18:11:12.566Z",
       "actorId": "U-inst1",
       "actorName": "Registrar, Bhopal Institute of Technology",
       "role": "institution",
@@ -358,11 +241,11 @@
         "sha256": "6d665d0f243a30050e7dee174db6ec9629832dff4bd9be526db0577c98ed1b4a"
       },
       "prevHash": "GENESIS",
-      "hash": "91202b82f4ae2dac18d29b892dfe10187a82c8b7efd65e53fd99a1a7071ea190"
+      "hash": "cf801b26bc84cbeb375b5ba5db577928206269b018a82f4dd49e8af494ed8ead"
     },
     {
       "seq": 2,
-      "at": "2026-10-30T08:56:29.660Z",
+      "at": "2026-10-30T18:11:12.567Z",
       "actorId": "U-officer",
       "actorName": "Rahul Verma (AICTE Officer)",
       "role": "officer",
@@ -371,12 +254,12 @@
       "details": {
         "observation": "Documents in order."
       },
-      "prevHash": "91202b82f4ae2dac18d29b892dfe10187a82c8b7efd65e53fd99a1a7071ea190",
-      "hash": "689ee573b5e2e3fbc061d96b15354425a0396bc0b86731b86e0d45962c9a5d87"
+      "prevHash": "cf801b26bc84cbeb375b5ba5db577928206269b018a82f4dd49e8af494ed8ead",
+      "hash": "25b082189cb0d875ea7c3721462c8414fc768d9194d9a6d5e20c05dce23eab5b"
     },
     {
       "seq": 3,
-      "at": "2026-10-30T08:56:29.661Z",
+      "at": "2026-10-30T18:11:12.570Z",
       "actorId": "U-officer",
       "actorName": "Rahul Verma (AICTE Officer)",
       "role": "officer",
@@ -385,12 +268,12 @@
       "details": {
         "reference": "MOCK-SEED"
       },
-      "prevHash": "689ee573b5e2e3fbc061d96b15354425a0396bc0b86731b86e0d45962c9a5d87",
-      "hash": "5fa78e5b5d31bfd9b87d35d05a0f4c87759a40acf49eac9d4421ace53f69e640"
+      "prevHash": "25b082189cb0d875ea7c3721462c8414fc768d9194d9a6d5e20c05dce23eab5b",
+      "hash": "9df9c9dc05e1c4742f28e5f25576771ca643d65ffceaf1d238c0233644c06276"
     },
     {
       "seq": 4,
-      "at": "2026-10-30T08:56:29.661Z",
+      "at": "2026-10-30T18:11:12.572Z",
       "actorId": "U-inst1",
       "actorName": "Registrar, Bhopal Institute of Technology",
       "role": "institution",
@@ -402,12 +285,12 @@
         "amount": 1500000,
         "sha256": "fd443a91abead5a8f7fea7f558a4593107befe378e06268fc73a7f751aa24b66"
       },
-      "prevHash": "5fa78e5b5d31bfd9b87d35d05a0f4c87759a40acf49eac9d4421ace53f69e640",
-      "hash": "76dee52ab763629b24479814966c1b2e3e5c720761160f079837fa1c730e0aef"
+      "prevHash": "9df9c9dc05e1c4742f28e5f25576771ca643d65ffceaf1d238c0233644c06276",
+      "hash": "b577ed7048ca7249fabc9a6a4391c6b09db9b11c221a37a7c217351e5f769866"
     },
     {
       "seq": 5,
-      "at": "2026-10-30T08:56:29.661Z",
+      "at": "2026-10-30T18:11:12.573Z",
       "actorId": "U-officer",
       "actorName": "Rahul Verma (AICTE Officer)",
       "role": "officer",
@@ -416,12 +299,12 @@
       "details": {
         "observation": "Documents in order."
       },
-      "prevHash": "76dee52ab763629b24479814966c1b2e3e5c720761160f079837fa1c730e0aef",
-      "hash": "bb02f01df9d968c1247df8f939ccac304ac8a8764d056565f1151ab34a28c354"
+      "prevHash": "b577ed7048ca7249fabc9a6a4391c6b09db9b11c221a37a7c217351e5f769866",
+      "hash": "a8592c2b8603cb3dcc672fc3c2e2e82a0e666bafb49322d405a7d56d8c9be7d9"
     },
     {
       "seq": 6,
-      "at": "2026-10-30T08:56:29.662Z",
+      "at": "2026-10-30T18:11:12.574Z",
       "actorId": "U-officer",
       "actorName": "Rahul Verma (AICTE Officer)",
       "role": "officer",
@@ -430,12 +313,12 @@
       "details": {
         "reference": "MOCK-SEED"
       },
-      "prevHash": "bb02f01df9d968c1247df8f939ccac304ac8a8764d056565f1151ab34a28c354",
-      "hash": "d315298d88c98ef4a09883db76324af5bb446ebb2d6bfb038f2cc09f8d3c1e4a"
+      "prevHash": "a8592c2b8603cb3dcc672fc3c2e2e82a0e666bafb49322d405a7d56d8c9be7d9",
+      "hash": "32a3627ae07b266196f92e04f60ae6398b2c43bd4cee4c666a16d5983544a473"
     },
     {
       "seq": 7,
-      "at": "2026-10-30T08:56:29.662Z",
+      "at": "2026-10-30T18:11:12.576Z",
       "actorId": "U-inst1",
       "actorName": "Registrar, Bhopal Institute of Technology",
       "role": "institution",
@@ -447,12 +330,12 @@
         "amount": 3000000,
         "sha256": "f4df8430a11dfb5fe249409ce3aa8c6cb349c4af18108a5bb62454ef9b5c3d43"
       },
-      "prevHash": "d315298d88c98ef4a09883db76324af5bb446ebb2d6bfb038f2cc09f8d3c1e4a",
-      "hash": "da4a86535111a874e8102081ca947796ee05f39a4ac12c19426b4e0dde341400"
+      "prevHash": "32a3627ae07b266196f92e04f60ae6398b2c43bd4cee4c666a16d5983544a473",
+      "hash": "66c17cfd4b66125e7e1a2cd5ce476fa26a88ea999050441d471961cb71630caf"
     },
     {
       "seq": 8,
-      "at": "2026-10-30T08:56:29.662Z",
+      "at": "2026-10-30T18:11:12.577Z",
       "actorId": "U-officer",
       "actorName": "Rahul Verma (AICTE Officer)",
       "role": "officer",
@@ -461,12 +344,12 @@
       "details": {
         "observation": "Documents in order."
       },
-      "prevHash": "da4a86535111a874e8102081ca947796ee05f39a4ac12c19426b4e0dde341400",
-      "hash": "f214008ec8c07ede509fb7f104065b43853f327b4756b33f2a88fe4e247f7a51"
+      "prevHash": "66c17cfd4b66125e7e1a2cd5ce476fa26a88ea999050441d471961cb71630caf",
+      "hash": "c0b602d3259db06eee877c7882e6af8438959d8bd4d23e492dbaf44f66a0db15"
     },
     {
       "seq": 9,
-      "at": "2026-10-30T08:56:29.663Z",
+      "at": "2026-10-30T18:11:12.578Z",
       "actorId": "U-officer",
       "actorName": "Rahul Verma (AICTE Officer)",
       "role": "officer",
@@ -475,12 +358,12 @@
       "details": {
         "reference": "MOCK-SEED"
       },
-      "prevHash": "f214008ec8c07ede509fb7f104065b43853f327b4756b33f2a88fe4e247f7a51",
-      "hash": "ae3d3bc42855a95d49515aa51b3a1b8396a4236f70878dd5cc237005556a49b2"
+      "prevHash": "c0b602d3259db06eee877c7882e6af8438959d8bd4d23e492dbaf44f66a0db15",
+      "hash": "53bb60aff266a467dad45cbbf6b7679cfcfd512d64b4c561f9ae6034a1f62d35"
     },
     {
       "seq": 10,
-      "at": "2026-10-30T08:56:29.663Z",
+      "at": "2026-10-30T18:11:12.580Z",
       "actorId": "U-inst2",
       "actorName": "Registrar, Sagar College of Engineering",
       "role": "institution",
@@ -492,12 +375,12 @@
         "amount": 1000000,
         "sha256": "709edc4b21c573c8a7ce90509d63a64723e157dd50f2b350d15903ef4820e889"
       },
-      "prevHash": "ae3d3bc42855a95d49515aa51b3a1b8396a4236f70878dd5cc237005556a49b2",
-      "hash": "443b6c7ac6ed232a064793b730fe6c0a5080b1cd816205e558e0052b96fa234e"
+      "prevHash": "53bb60aff266a467dad45cbbf6b7679cfcfd512d64b4c561f9ae6034a1f62d35",
+      "hash": "e2c6c596bc3cc351448e8e82ec6b66890f482512f398d0258b25eba9474d9fed"
     },
     {
       "seq": 11,
-      "at": "2026-10-30T08:56:29.663Z",
+      "at": "2026-10-30T18:11:12.581Z",
       "actorId": "U-officer",
       "actorName": "Rahul Verma (AICTE Officer)",
       "role": "officer",
@@ -506,12 +389,12 @@
       "details": {
         "observation": "Documents in order."
       },
-      "prevHash": "443b6c7ac6ed232a064793b730fe6c0a5080b1cd816205e558e0052b96fa234e",
-      "hash": "5e7a349ed28ff2c9955286508cfdba913c5187e653bf3d7eae6118e2b2da692c"
+      "prevHash": "e2c6c596bc3cc351448e8e82ec6b66890f482512f398d0258b25eba9474d9fed",
+      "hash": "54cb50f8345c820a3100e2f1665ef8867b59d6a29e9ca69749a7ca87bddadeeb"
     },
     {
       "seq": 12,
-      "at": "2026-10-30T08:56:29.664Z",
+      "at": "2026-10-30T18:11:12.582Z",
       "actorId": "U-officer",
       "actorName": "Rahul Verma (AICTE Officer)",
       "role": "officer",
@@ -520,12 +403,12 @@
       "details": {
         "reference": "MOCK-SEED"
       },
-      "prevHash": "5e7a349ed28ff2c9955286508cfdba913c5187e653bf3d7eae6118e2b2da692c",
-      "hash": "8bf41bcac4aa3af0bbb6bf8b5332c7a06bf833d37e0ff8f9db103452e2f55588"
+      "prevHash": "54cb50f8345c820a3100e2f1665ef8867b59d6a29e9ca69749a7ca87bddadeeb",
+      "hash": "b31e8e3bc8926be98dc54d7ae9736ce09ff41541ad20f13298b1d7bf067a8bfb"
     },
     {
       "seq": 13,
-      "at": "2026-10-30T08:56:29.664Z",
+      "at": "2026-10-30T18:11:12.584Z",
       "actorId": "U-inst2",
       "actorName": "Registrar, Sagar College of Engineering",
       "role": "institution",
@@ -537,12 +420,12 @@
         "amount": 2500000,
         "sha256": "972b4ed622751fbaad229c719a3bd1cf11a34347b84410dea462c34e0454a483"
       },
-      "prevHash": "8bf41bcac4aa3af0bbb6bf8b5332c7a06bf833d37e0ff8f9db103452e2f55588",
-      "hash": "d304b85d05d5aff5804946a8866623a54675bdc06c719ba540d0cd2d30d2037a"
+      "prevHash": "b31e8e3bc8926be98dc54d7ae9736ce09ff41541ad20f13298b1d7bf067a8bfb",
+      "hash": "e6be7e6eda4f6f165ad7f98f316affb64089a59cd9d5664c4af70ffef4847e61"
     },
     {
       "seq": 14,
-      "at": "2026-10-30T08:56:29.664Z",
+      "at": "2026-10-30T18:11:12.585Z",
       "actorId": "U-officer",
       "actorName": "Rahul Verma (AICTE Officer)",
       "role": "officer",
@@ -551,12 +434,12 @@
       "details": {
         "observation": "Documents in order."
       },
-      "prevHash": "d304b85d05d5aff5804946a8866623a54675bdc06c719ba540d0cd2d30d2037a",
-      "hash": "7692cb8e8321d8be3cb5f2195418598f912e8751c96634ae204471569c78b843"
+      "prevHash": "e6be7e6eda4f6f165ad7f98f316affb64089a59cd9d5664c4af70ffef4847e61",
+      "hash": "fe1b1475eff90d208daee5f542e335301e69103a7b2aa667b8b033d5eb130f9d"
     },
     {
       "seq": 15,
-      "at": "2026-10-30T08:56:29.664Z",
+      "at": "2026-10-30T18:11:12.586Z",
       "actorId": "U-officer",
       "actorName": "Rahul Verma (AICTE Officer)",
       "role": "officer",
@@ -565,12 +448,12 @@
       "details": {
         "reference": "MOCK-SEED"
       },
-      "prevHash": "7692cb8e8321d8be3cb5f2195418598f912e8751c96634ae204471569c78b843",
-      "hash": "44a17d629622155bfafe109be69a58ac3b5c0f5ab86d90e2e0c9e2bb0ddb78f1"
+      "prevHash": "fe1b1475eff90d208daee5f542e335301e69103a7b2aa667b8b033d5eb130f9d",
+      "hash": "141a6343676d4d7f327247dfd2ab6c8320861c6463a52ef63e46fa8ae6709f54"
     },
     {
       "seq": 16,
-      "at": "2026-10-30T08:56:29.665Z",
+      "at": "2026-10-30T18:11:12.589Z",
       "actorId": "U-inst2",
       "actorName": "Registrar, Sagar College of Engineering",
       "role": "institution",
@@ -582,12 +465,12 @@
         "amount": 1800000,
         "sha256": "c78f4a5a052b54027369dc420e924d078dc16dd8250c15d12b09f14660cea75e"
       },
-      "prevHash": "44a17d629622155bfafe109be69a58ac3b5c0f5ab86d90e2e0c9e2bb0ddb78f1",
-      "hash": "d87c33266d014bacc7c51c746a0f56cf984fe07b83444dd4de39c95b46a8e81d"
+      "prevHash": "141a6343676d4d7f327247dfd2ab6c8320861c6463a52ef63e46fa8ae6709f54",
+      "hash": "91a575622bb99efd4e573469d58d1261d87183ba6549a30e9c6684d0ef27cb90"
     },
     {
       "seq": 17,
-      "at": "2026-10-30T08:56:29.665Z",
+      "at": "2026-10-30T18:11:12.591Z",
       "actorId": "U-inst1",
       "actorName": "Registrar, Bhopal Institute of Technology",
       "role": "institution",
@@ -599,972 +482,11 @@
         "amount": 500000,
         "sha256": "675c69261da414947efc8d1ef8ff62b4a659369a9d23ad4657772c846578d01a"
       },
-      "prevHash": "d87c33266d014bacc7c51c746a0f56cf984fe07b83444dd4de39c95b46a8e81d",
-      "hash": "58c2d5ae847428bd7697504015c3e76d4f4c2fe9fa031865dfef2063657e4481"
-    },
-    {
-      "seq": 18,
-      "at": "2026-10-30T10:50:54.682Z",
-      "actorId": "system",
-      "actorName": "System",
-      "role": "system",
-      "action": "ALERT_SENT",
-      "fdrId": "FDR-0001",
-      "details": {
-        "threshold": 90,
-        "daysLeft": 85,
-        "channels": [
-          "in-app",
-          "email (mock)"
-        ]
-      },
-      "prevHash": "58c2d5ae847428bd7697504015c3e76d4f4c2fe9fa031865dfef2063657e4481",
-      "hash": "0ff0022ccd1c1b6229897853e01d0948183fee5f403c228d889c569cc533831c"
-    },
-    {
-      "seq": 19,
-      "at": "2026-10-30T10:50:54.687Z",
-      "actorId": "system",
-      "actorName": "System",
-      "role": "system",
-      "action": "ALERT_SENT",
-      "fdrId": "FDR-0002",
-      "details": {
-        "threshold": 30,
-        "daysLeft": 25,
-        "channels": [
-          "in-app",
-          "email (mock)"
-        ]
-      },
-      "prevHash": "0ff0022ccd1c1b6229897853e01d0948183fee5f403c228d889c569cc533831c",
-      "hash": "0b3bfe3b90be38e94d58fa2e3f02bb5404cece9e6c2a3cd13cc81883945463f8"
-    },
-    {
-      "seq": 20,
-      "at": "2026-10-30T10:50:54.691Z",
-      "actorId": "system",
-      "actorName": "System",
-      "role": "system",
-      "action": "ESCALATED",
-      "fdrId": "FDR-0002",
-      "details": {
-        "to": "officer",
-        "level": "OFFICER",
-        "daysLeft": 25
-      },
-      "prevHash": "0b3bfe3b90be38e94d58fa2e3f02bb5404cece9e6c2a3cd13cc81883945463f8",
-      "hash": "1fd7be9cf64ef81a91def7fd9c5b4b2cff02aa3d998010bae0d886e1a1944067"
-    },
-    {
-      "seq": 21,
-      "at": "2026-10-30T10:50:54.694Z",
-      "actorId": "system",
-      "actorName": "System",
-      "role": "system",
-      "action": "ALERT_SENT",
-      "fdrId": "FDR-0003",
-      "details": {
-        "threshold": 7,
-        "daysLeft": 5,
-        "channels": [
-          "in-app",
-          "email (mock)"
-        ]
-      },
-      "prevHash": "1fd7be9cf64ef81a91def7fd9c5b4b2cff02aa3d998010bae0d886e1a1944067",
-      "hash": "a058a0941cd6c0f8b334f13521b5d76fab49678ceee63625f351ab429886c25f"
-    },
-    {
-      "seq": 22,
-      "at": "2026-10-30T10:50:54.697Z",
-      "actorId": "system",
-      "actorName": "System",
-      "role": "system",
-      "action": "ESCALATED",
-      "fdrId": "FDR-0003",
-      "details": {
-        "to": "officer",
-        "level": "OFFICER",
-        "daysLeft": 5
-      },
-      "prevHash": "a058a0941cd6c0f8b334f13521b5d76fab49678ceee63625f351ab429886c25f",
-      "hash": "b5da86ff9b62ce4d6e61ce9c04256b8d6a69ee56f3cec9dd408367f675f71298"
-    },
-    {
-      "seq": 23,
-      "at": "2026-10-30T10:50:54.701Z",
-      "actorId": "system",
-      "actorName": "System",
-      "role": "system",
-      "action": "ESCALATED",
-      "fdrId": "FDR-0003",
-      "details": {
-        "to": "admin",
-        "level": "SENIOR",
-        "daysLeft": 5
-      },
-      "prevHash": "b5da86ff9b62ce4d6e61ce9c04256b8d6a69ee56f3cec9dd408367f675f71298",
-      "hash": "6f4f71d2101956bff5a93839404de52ac07476ea1a4697054055275e92a07043"
-    },
-    {
-      "seq": 24,
-      "at": "2026-10-30T10:50:54.706Z",
-      "actorId": "system",
-      "actorName": "System",
-      "role": "system",
-      "action": "ALERT_SENT",
-      "fdrId": "FDR-0004",
-      "details": {
-        "threshold": 7,
-        "daysLeft": -3,
-        "channels": [
-          "in-app",
-          "email (mock)"
-        ]
-      },
-      "prevHash": "6f4f71d2101956bff5a93839404de52ac07476ea1a4697054055275e92a07043",
-      "hash": "22cc823cab0c3a1f3b95cbc97d7231127837047d5ed40d28f4d0b20b65bf025f"
-    },
-    {
-      "seq": 25,
-      "at": "2026-10-30T10:50:54.708Z",
-      "actorId": "system",
-      "actorName": "System",
-      "role": "system",
-      "action": "ESCALATED",
-      "fdrId": "FDR-0004",
-      "details": {
-        "to": "officer",
-        "level": "OFFICER",
-        "daysLeft": -3
-      },
-      "prevHash": "22cc823cab0c3a1f3b95cbc97d7231127837047d5ed40d28f4d0b20b65bf025f",
-      "hash": "b1e286f5bae88176f000939b2359452d04da7c231947fbc8da35c80695a5d54f"
-    },
-    {
-      "seq": 26,
-      "at": "2026-10-30T10:50:54.713Z",
-      "actorId": "system",
-      "actorName": "System",
-      "role": "system",
-      "action": "ESCALATED",
-      "fdrId": "FDR-0004",
-      "details": {
-        "to": "admin",
-        "level": "SENIOR",
-        "daysLeft": -3
-      },
-      "prevHash": "b1e286f5bae88176f000939b2359452d04da7c231947fbc8da35c80695a5d54f",
-      "hash": "2de077ab530b604e6f234bd85077cd8f0e3e0f2e2b85af75354903232498c4b4"
-    },
-    {
-      "seq": 27,
-      "at": "2026-10-30T10:50:54.716Z",
-      "actorId": "system",
-      "actorName": "System",
-      "role": "system",
-      "action": "ESCALATED",
-      "fdrId": "FDR-0004",
-      "details": {
-        "to": "officer",
-        "level": "OVERDUE",
-        "daysLeft": -3
-      },
-      "prevHash": "2de077ab530b604e6f234bd85077cd8f0e3e0f2e2b85af75354903232498c4b4",
-      "hash": "4a373070d8cbad5075c3994fb8bf9a3c406a061d3554ee0dc1184d4b0dbd21e3"
-    },
-    {
-      "seq": 28,
-      "at": "2026-10-30T10:51:22.003Z",
-      "actorId": "system",
-      "actorName": "System",
-      "role": "system",
-      "action": "LOGIN_FAILED",
-      "fdrId": null,
-      "details": {
-        "email": "garvitbankoti@gmail.com"
-      },
-      "prevHash": "4a373070d8cbad5075c3994fb8bf9a3c406a061d3554ee0dc1184d4b0dbd21e3",
-      "hash": "031f7b40708fe7d67425c99374f58884b3bcaed734a51eac147307668d895c77"
-    },
-    {
-      "seq": 29,
-      "at": "2026-10-30T10:51:28.349Z",
-      "actorId": "system",
-      "actorName": "System",
-      "role": "system",
-      "action": "LOGIN_FAILED",
-      "fdrId": null,
-      "details": {
-        "email": "demo@gmail.com"
-      },
-      "prevHash": "031f7b40708fe7d67425c99374f58884b3bcaed734a51eac147307668d895c77",
-      "hash": "b78753f12043e787e1f3c185ba0b85fd3a2b27025bbcee6dbbb87fc67da13803"
-    },
-    {
-      "seq": 30,
-      "at": "2026-10-30T10:51:30.848Z",
-      "actorId": "system",
-      "actorName": "System",
-      "role": "system",
-      "action": "LOGIN_FAILED",
-      "fdrId": null,
-      "details": {
-        "email": "demo@gmail.com"
-      },
-      "prevHash": "b78753f12043e787e1f3c185ba0b85fd3a2b27025bbcee6dbbb87fc67da13803",
-      "hash": "dad835feef718b67fa8b2cf7bca64ac4687f16b7c577f20cfa87020faaa8d580"
-    },
-    {
-      "seq": 31,
-      "at": "2026-10-30T12:09:16.709Z",
-      "actorId": "system",
-      "actorName": "System",
-      "role": "system",
-      "action": "LOGIN_FAILED",
-      "fdrId": null,
-      "details": {
-        "email": "demo@demo.in"
-      },
-      "prevHash": "dad835feef718b67fa8b2cf7bca64ac4687f16b7c577f20cfa87020faaa8d580",
-      "hash": "73ac64577b4d20d4dab19f56b5c58cd5dd1deb19b3a0ced8d0632d63f656ce08"
-    },
-    {
-      "seq": 32,
-      "at": "2026-10-30T12:09:24.184Z",
-      "actorId": "system",
-      "actorName": "System",
-      "role": "system",
-      "action": "LOGIN_FAILED",
-      "fdrId": null,
-      "details": {
-        "email": "demo@demo.in"
-      },
-      "prevHash": "73ac64577b4d20d4dab19f56b5c58cd5dd1deb19b3a0ced8d0632d63f656ce08",
-      "hash": "7bddc9be67187522f0d33b139fa0a78ba8b465e179298abbbb0f47d444fc3a60"
-    },
-    {
-      "seq": 33,
-      "at": "2026-10-30T12:10:04.012Z",
-      "actorId": "system",
-      "actorName": "System",
-      "role": "system",
-      "action": "LOGIN_FAILED",
-      "fdrId": null,
-      "details": {
-        "email": "bit@demo.in"
-      },
-      "prevHash": "7bddc9be67187522f0d33b139fa0a78ba8b465e179298abbbb0f47d444fc3a60",
-      "hash": "1eb686c51b68594fee1865f1ac7f6b922f58dbad541a93d76b53a60dc52c2626"
-    },
-    {
-      "seq": 34,
-      "at": "2026-10-30T12:10:04.716Z",
-      "actorId": "system",
-      "actorName": "System",
-      "role": "system",
-      "action": "LOGIN_FAILED",
-      "fdrId": null,
-      "details": {
-        "email": "bit@demo.in"
-      },
-      "prevHash": "1eb686c51b68594fee1865f1ac7f6b922f58dbad541a93d76b53a60dc52c2626",
-      "hash": "5447bfb7ee9d2bfad61bfed159c51575b249d54ae3aa74b8e92b50553e3e3aee"
-    },
-    {
-      "seq": 35,
-      "at": "2026-10-30T12:10:05.054Z",
-      "actorId": "system",
-      "actorName": "System",
-      "role": "system",
-      "action": "LOGIN_FAILED",
-      "fdrId": null,
-      "details": {
-        "email": "bit@demo.in"
-      },
-      "prevHash": "5447bfb7ee9d2bfad61bfed159c51575b249d54ae3aa74b8e92b50553e3e3aee",
-      "hash": "c4f46d6dee7b7649d24232564bea1cfa262f8d1a360f3873af39ad8861f3511d"
-    },
-    {
-      "seq": 36,
-      "at": "2026-10-30T12:10:05.214Z",
-      "actorId": "system",
-      "actorName": "System",
-      "role": "system",
-      "action": "LOGIN_FAILED",
-      "fdrId": null,
-      "details": {
-        "email": "bit@demo.in"
-      },
-      "prevHash": "c4f46d6dee7b7649d24232564bea1cfa262f8d1a360f3873af39ad8861f3511d",
-      "hash": "5f3e08764f246c24d5f5e0cbb95b2a72e642330b491dd241e045f49c0dc92982"
-    },
-    {
-      "seq": 37,
-      "at": "2026-10-30T12:10:05.390Z",
-      "actorId": "system",
-      "actorName": "System",
-      "role": "system",
-      "action": "LOGIN_FAILED",
-      "fdrId": null,
-      "details": {
-        "email": "bit@demo.in"
-      },
-      "prevHash": "5f3e08764f246c24d5f5e0cbb95b2a72e642330b491dd241e045f49c0dc92982",
-      "hash": "516bb5c3dffbab63147fb2b656e7b8cf486467d65b6ba32cf9d3078b8b00745d"
-    },
-    {
-      "seq": 38,
-      "at": "2026-10-30T12:12:30.860Z",
-      "actorId": "U-inst1",
-      "actorName": "Registrar, Bhopal Institute of Technology",
-      "role": "institution",
-      "action": "LOGIN",
-      "fdrId": null,
-      "details": {},
-      "prevHash": "516bb5c3dffbab63147fb2b656e7b8cf486467d65b6ba32cf9d3078b8b00745d",
-      "hash": "1e26edbdb7a37249d3617615bfc01914f68dee653ad524fac1450f38b22b4c5b"
-    },
-    {
-      "seq": 39,
-      "at": "2026-10-30T15:28:52.625Z",
-      "actorId": "U-officer",
-      "actorName": "Rahul Verma (AICTE Officer)",
-      "role": "officer",
-      "action": "LOGIN",
-      "fdrId": null,
-      "details": {},
-      "prevHash": "1e26edbdb7a37249d3617615bfc01914f68dee653ad524fac1450f38b22b4c5b",
-      "hash": "ad40029970142165fbe5740109c4e103026cfdeae81f01a49aed1827aeb4790e"
-    },
-    {
-      "seq": 40,
-      "at": "2026-10-30T15:28:52.659Z",
-      "actorId": "U-inst1",
-      "actorName": "Registrar, Bhopal Institute of Technology",
-      "role": "institution",
-      "action": "LOGIN",
-      "fdrId": null,
-      "details": {},
-      "prevHash": "ad40029970142165fbe5740109c4e103026cfdeae81f01a49aed1827aeb4790e",
-      "hash": "fc3f20267d7c43e1efbf21a03d33540c5477d7b465b9087ad305553731958232"
-    },
-    {
-      "seq": 41,
-      "at": "2026-10-30T15:28:52.683Z",
-      "actorId": "U-admin",
-      "actorName": "Dr. Meera Iyer (Authority)",
-      "role": "admin",
-      "action": "LOGIN",
-      "fdrId": null,
-      "details": {},
-      "prevHash": "fc3f20267d7c43e1efbf21a03d33540c5477d7b465b9087ad305553731958232",
-      "hash": "54f1b129d457f58d9b3d313c8a48488c19059a4589b44d634243af9152e87b01"
-    },
-    {
-      "seq": 42,
-      "at": "2026-10-30T15:28:52.731Z",
-      "actorId": "U-inst1",
-      "actorName": "Registrar, Bhopal Institute of Technology",
-      "role": "institution",
-      "action": "FDR_SUBMITTED",
-      "fdrId": "FDR-0008",
-      "details": {
-        "fdrNumber": "T-001",
-        "bankName": "SBI",
-        "amount": 900000,
-        "sha256": "7602cdba86c2274615743dafcf46456dc9d2e827b9af5b4872097a96b4598b41"
-      },
-      "prevHash": "54f1b129d457f58d9b3d313c8a48488c19059a4589b44d634243af9152e87b01",
-      "hash": "a1a7aeb33f87ac61ed06b1cb2f27d5fc542610a77dfdac6c5c91f3dda34908ce"
-    },
-    {
-      "seq": 43,
-      "at": "2026-10-30T15:28:52.765Z",
-      "actorId": "U-inst2",
-      "actorName": "Registrar, Sagar College of Engineering",
-      "role": "institution",
-      "action": "LOGIN",
-      "fdrId": null,
-      "details": {},
-      "prevHash": "a1a7aeb33f87ac61ed06b1cb2f27d5fc542610a77dfdac6c5c91f3dda34908ce",
-      "hash": "1652b9db5000b502e716ccddbbb6e769b3284b982273f05dcb25a5497c6c51d3"
-    },
-    {
-      "seq": 44,
-      "at": "2026-10-30T15:28:52.776Z",
-      "actorId": "U-inst2",
-      "actorName": "Registrar, Sagar College of Engineering",
-      "role": "institution",
-      "action": "DUPLICATE_BLOCKED",
-      "fdrId": null,
-      "details": {
-        "fdrNumber": "T-001",
-        "bankName": "SBI"
-      },
-      "prevHash": "1652b9db5000b502e716ccddbbb6e769b3284b982273f05dcb25a5497c6c51d3",
-      "hash": "a99a6fe07ad3b10683132639fd846d1fa1c3d1452c44a4e001957c620aa0f2e4"
-    },
-    {
-      "seq": 45,
-      "at": "2026-10-30T15:28:52.788Z",
-      "actorId": "U-inst1",
-      "actorName": "Registrar, Bhopal Institute of Technology",
-      "role": "institution",
-      "action": "FDR_SUBMITTED",
-      "fdrId": "FDR-0009",
-      "details": {
-        "fdrNumber": "T-002",
-        "bankName": "SBI",
-        "amount": 900000,
-        "sha256": "72ce6210db30305f2d1b07aef8063a05422f8e1edad09418c6f85bb30b8c8f57"
-      },
-      "prevHash": "a99a6fe07ad3b10683132639fd846d1fa1c3d1452c44a4e001957c620aa0f2e4",
-      "hash": "37d5f9eec66a2c0f493681921bc0fd9fbb166ee58ed5ef892a86595293e2dbca"
-    },
-    {
-      "seq": 46,
-      "at": "2026-10-30T15:28:52.789Z",
-      "actorId": "system",
-      "actorName": "System",
-      "role": "system",
-      "action": "DISCREPANCIES_FLAGGED",
-      "fdrId": "FDR-0009",
-      "details": {
-        "codes": [
-          "IMPOSSIBLE_DATES",
-          "ALREADY_MATURED",
-          "SHORT_TENURE"
-        ]
-      },
-      "prevHash": "37d5f9eec66a2c0f493681921bc0fd9fbb166ee58ed5ef892a86595293e2dbca",
-      "hash": "32f9b8e8cfa1eddc25f45b0bc30d01d57d9d64727564d197a0f26fed3f9fca96"
-    },
-    {
-      "seq": 47,
-      "at": "2026-10-30T15:28:52.808Z",
-      "actorId": "U-officer",
-      "actorName": "Rahul Verma (AICTE Officer)",
-      "role": "officer",
-      "action": "OFFICER_VERIFIED",
-      "fdrId": "FDR-0008",
-      "details": {
-        "observation": "ok"
-      },
-      "prevHash": "32f9b8e8cfa1eddc25f45b0bc30d01d57d9d64727564d197a0f26fed3f9fca96",
-      "hash": "33881a6f94c6de9ec8a610e3a0a633b0451f3a2556ca1e2e864fdb65b13fa28a"
-    },
-    {
-      "seq": 48,
-      "at": "2026-10-30T15:28:53.120Z",
-      "actorId": "U-officer",
-      "actorName": "Rahul Verma (AICTE Officer)",
-      "role": "officer",
-      "action": "BANK_VERIFIED",
-      "fdrId": "FDR-0008",
-      "details": {
-        "adapter": "Mock bank gateway",
-        "reference": "MOCK-MVV4NLA8",
-        "reason": "Details match bank records (simulated)."
-      },
-      "prevHash": "33881a6f94c6de9ec8a610e3a0a633b0451f3a2556ca1e2e864fdb65b13fa28a",
-      "hash": "c62afc51b6736c40ed23499981b7c159f0ec2c6c4b7602c4c2db0b31f4160db6"
-    },
-    {
-      "seq": 49,
-      "at": "2026-10-30T15:28:53.124Z",
-      "actorId": "system",
-      "actorName": "System",
-      "role": "system",
-      "action": "ALERT_SENT",
-      "fdrId": "FDR-0008",
-      "details": {
-        "threshold": 90,
-        "daysLeft": 62,
-        "channels": [
-          "in-app",
-          "email (mock)"
-        ]
-      },
-      "prevHash": "c62afc51b6736c40ed23499981b7c159f0ec2c6c4b7602c4c2db0b31f4160db6",
-      "hash": "e666db555f306626be52ccd7a47811b17af9f4f7a5d6d829beadc32793e7d7ae"
-    },
-    {
-      "seq": 50,
-      "at": "2026-10-30T15:28:53.139Z",
-      "actorId": "U-inst1",
-      "actorName": "Registrar, Bhopal Institute of Technology",
-      "role": "institution",
-      "action": "RELEASE_REQUESTED",
-      "fdrId": "FDR-0008",
-      "details": {
-        "reason": "Course closed",
-        "premature": true
-      },
-      "prevHash": "e666db555f306626be52ccd7a47811b17af9f4f7a5d6d829beadc32793e7d7ae",
-      "hash": "0b2fc3c09ee5dd72d6393ee875ab0942be2c286cd4cc0b2af8091baddb392e35"
-    },
-    {
-      "seq": 51,
-      "at": "2026-10-30T15:28:53.153Z",
-      "actorId": "U-admin",
-      "actorName": "Dr. Meera Iyer (Authority)",
-      "role": "admin",
-      "action": "RELEASE_RECOMMENDED",
-      "fdrId": "FDR-0008",
-      "details": {
-        "remarks": "ok"
-      },
-      "prevHash": "0b2fc3c09ee5dd72d6393ee875ab0942be2c286cd4cc0b2af8091baddb392e35",
-      "hash": "08e3a24ebc43eebed8b1a9dd22aae4ed7efc4b6345c067fc85ee6bc417d30eff"
-    },
-    {
-      "seq": 52,
-      "at": "2026-10-30T15:28:53.171Z",
-      "actorId": "U-admin",
-      "actorName": "Dr. Meera Iyer (Authority)",
-      "role": "admin",
-      "action": "RELEASE_APPROVED_FINAL",
-      "fdrId": "FDR-0008",
-      "details": {
-        "remarks": "Authorised"
-      },
-      "prevHash": "08e3a24ebc43eebed8b1a9dd22aae4ed7efc4b6345c067fc85ee6bc417d30eff",
-      "hash": "3529bc784419bf98021ec6b9c6f7ad506cf1339e14faaab4f273a3e24914da18"
-    },
-    {
-      "seq": 53,
-      "at": "2026-10-30T15:30:23.446Z",
-      "actorId": "system",
-      "actorName": "System",
-      "role": "system",
-      "action": "LOGIN_FAILED",
-      "fdrId": null,
-      "details": {
-        "email": "lakshyjain2006@gmail.com"
-      },
-      "prevHash": "3529bc784419bf98021ec6b9c6f7ad506cf1339e14faaab4f273a3e24914da18",
-      "hash": "c22eaac8034d3035b7e158bc78fcfa95d30f8740973ed61e3b6711ed0f014018"
-    },
-    {
-      "seq": 54,
-      "at": "2026-10-30T15:30:24.492Z",
-      "actorId": "system",
-      "actorName": "System",
-      "role": "system",
-      "action": "LOGIN_FAILED",
-      "fdrId": null,
-      "details": {
-        "email": "lakshyjain2006@gmail.com"
-      },
-      "prevHash": "c22eaac8034d3035b7e158bc78fcfa95d30f8740973ed61e3b6711ed0f014018",
-      "hash": "b689d29bc1d2190db26d914ff9873aae8f4f705f74454371e0193461adb3be4e"
-    },
-    {
-      "seq": 55,
-      "at": "2026-10-30T15:30:39.931Z",
-      "actorId": "system",
-      "actorName": "System",
-      "role": "system",
-      "action": "LOGIN_FAILED",
-      "fdrId": null,
-      "details": {
-        "email": "lakshyjain2006@gmail.com"
-      },
-      "prevHash": "b689d29bc1d2190db26d914ff9873aae8f4f705f74454371e0193461adb3be4e",
-      "hash": "6d56957a24aa1f2a6aac3b083a48fa2fe08109ba842ab7c60a7b02f18e03050d"
-    },
-    {
-      "seq": 56,
-      "at": "2026-10-30T15:30:41.580Z",
-      "actorId": "system",
-      "actorName": "System",
-      "role": "system",
-      "action": "LOGIN_FAILED",
-      "fdrId": null,
-      "details": {
-        "email": "lakshyjain2006@gmail.com"
-      },
-      "prevHash": "6d56957a24aa1f2a6aac3b083a48fa2fe08109ba842ab7c60a7b02f18e03050d",
-      "hash": "78757197ce076308f997fd309530c1152dd4cee0793a923e5e48b1f99f2bf830"
-    },
-    {
-      "seq": 57,
-      "at": "2026-10-30T15:30:42.092Z",
-      "actorId": "system",
-      "actorName": "System",
-      "role": "system",
-      "action": "LOGIN_FAILED",
-      "fdrId": null,
-      "details": {
-        "email": "lakshyjain2006@gmail.com"
-      },
-      "prevHash": "78757197ce076308f997fd309530c1152dd4cee0793a923e5e48b1f99f2bf830",
-      "hash": "565c2898e5687e1cf588fc2e7934cb9fd7f6f6c02e054558f4d7ab69fe355f1d"
-    },
-    {
-      "seq": 58,
-      "at": "2026-10-30T15:30:56.358Z",
-      "actorId": "system",
-      "actorName": "System",
-      "role": "system",
-      "action": "LOGIN_FAILED",
-      "fdrId": null,
-      "details": {
-        "email": "demo@gmail.com"
-      },
-      "prevHash": "565c2898e5687e1cf588fc2e7934cb9fd7f6f6c02e054558f4d7ab69fe355f1d",
-      "hash": "1cf310a4bf556b835930b97dd2b40282fef197af434509248aeabbeb07d5a03e"
-    },
-    {
-      "seq": 59,
-      "at": "2026-10-30T15:30:57.211Z",
-      "actorId": "system",
-      "actorName": "System",
-      "role": "system",
-      "action": "LOGIN_FAILED",
-      "fdrId": null,
-      "details": {
-        "email": "demo@gmail.com"
-      },
-      "prevHash": "1cf310a4bf556b835930b97dd2b40282fef197af434509248aeabbeb07d5a03e",
-      "hash": "1ff89a76cb10668f670dd9b1f1f0ca2c8d3765203af275975410064f6ac8c1eb"
-    },
-    {
-      "seq": 60,
-      "at": "2026-10-30T15:30:57.364Z",
-      "actorId": "system",
-      "actorName": "System",
-      "role": "system",
-      "action": "LOGIN_FAILED",
-      "fdrId": null,
-      "details": {
-        "email": "demo@gmail.com"
-      },
-      "prevHash": "1ff89a76cb10668f670dd9b1f1f0ca2c8d3765203af275975410064f6ac8c1eb",
-      "hash": "54f87d440d2d7319e54fb13dc271f40e0d6f6b83ef520b41bf638329d2d91960"
-    },
-    {
-      "seq": 61,
-      "at": "2026-10-30T15:32:23.146Z",
-      "actorId": "U-officer",
-      "actorName": "Rahul Verma (AICTE Officer)",
-      "role": "officer",
-      "action": "LOGIN",
-      "fdrId": null,
-      "details": {},
-      "prevHash": "54f87d440d2d7319e54fb13dc271f40e0d6f6b83ef520b41bf638329d2d91960",
-      "hash": "7b4c1a1f710bef86002df08f8ba7bac688d26f7bb087d9ef16bdcf65884968ba"
-    },
-    {
-      "seq": 62,
-      "at": "2026-10-30T15:36:46.534Z",
-      "actorId": "system",
-      "actorName": "System",
-      "role": "system",
-      "action": "LOGIN_FAILED",
-      "fdrId": null,
-      "details": {
-        "email": "admin@demo.in"
-      },
-      "prevHash": "7b4c1a1f710bef86002df08f8ba7bac688d26f7bb087d9ef16bdcf65884968ba",
-      "hash": "bffcdd2485658933eeef8e714a2c002202a3391ab614565d6951cbc9f2a048a3"
-    },
-    {
-      "seq": 63,
-      "at": "2026-10-30T15:36:52.750Z",
-      "actorId": "U-admin",
-      "actorName": "Dr. Meera Iyer (Authority)",
-      "role": "admin",
-      "action": "LOGIN",
-      "fdrId": null,
-      "details": {},
-      "prevHash": "bffcdd2485658933eeef8e714a2c002202a3391ab614565d6951cbc9f2a048a3",
-      "hash": "eef8ac73783659409b9b1936680dd967e16ed28c0edd605c26976e2664e1fbdd"
-    },
-    {
-      "seq": 64,
-      "at": "2026-10-30T17:15:20.469Z",
-      "actorId": "U-officer",
-      "actorName": "Rahul Verma (AICTE Officer)",
-      "role": "officer",
-      "action": "LOGIN",
-      "fdrId": null,
-      "details": {},
-      "prevHash": "eef8ac73783659409b9b1936680dd967e16ed28c0edd605c26976e2664e1fbdd",
-      "hash": "43193bf0d803df84b8cd616885ccb0e05b9dc2027858bbe749d35bc58139e804"
-    },
-    {
-      "seq": 65,
-      "at": "2026-10-30T17:16:02.753Z",
-      "actorId": "U-officer",
-      "actorName": "Rahul Verma (AICTE Officer)",
-      "role": "officer",
-      "action": "LOGIN",
-      "fdrId": null,
-      "details": {},
-      "prevHash": "43193bf0d803df84b8cd616885ccb0e05b9dc2027858bbe749d35bc58139e804",
-      "hash": "cb016d79779c6d5fed9e81b803e25755d493c470d85ee1f1eee7c9848d233ffc"
-    },
-    {
-      "seq": 66,
-      "at": "2026-10-30T17:16:07.880Z",
-      "actorId": "U-admin",
-      "actorName": "Dr. Meera Iyer (Authority)",
-      "role": "admin",
-      "action": "LOGIN",
-      "fdrId": null,
-      "details": {},
-      "prevHash": "cb016d79779c6d5fed9e81b803e25755d493c470d85ee1f1eee7c9848d233ffc",
-      "hash": "331dcc57a9aa47eff408c45b2915fd245ce88a89c588598b5940dc0cd18bed2f"
-    },
-    {
-      "seq": 67,
-      "at": "2026-10-30T17:16:53.776Z",
-      "actorId": "U-officer",
-      "actorName": "Rahul Verma (AICTE Officer)",
-      "role": "officer",
-      "action": "LOGIN",
-      "fdrId": null,
-      "details": {},
-      "prevHash": "331dcc57a9aa47eff408c45b2915fd245ce88a89c588598b5940dc0cd18bed2f",
-      "hash": "34d6d579f794ea7daa363d6fda9eef97648c32f635301d0823689753a39d1e6d"
-    },
-    {
-      "seq": 68,
-      "at": "2026-10-30T17:16:58.951Z",
-      "actorId": "U-admin",
-      "actorName": "Dr. Meera Iyer (Authority)",
-      "role": "admin",
-      "action": "LOGIN",
-      "fdrId": null,
-      "details": {},
-      "prevHash": "34d6d579f794ea7daa363d6fda9eef97648c32f635301d0823689753a39d1e6d",
-      "hash": "bb4e9fe40cea08f5ffe4dca8f30ef31d49eb4ab8bd70bd89cf95411a18f571ae"
-    },
-    {
-      "seq": 69,
-      "at": "2026-10-30T17:17:17.187Z",
-      "actorId": "U-inst1",
-      "actorName": "Registrar, Bhopal Institute of Technology",
-      "role": "institution",
-      "action": "LOGIN",
-      "fdrId": null,
-      "details": {},
-      "prevHash": "bb4e9fe40cea08f5ffe4dca8f30ef31d49eb4ab8bd70bd89cf95411a18f571ae",
-      "hash": "323ba80422ef8e6e634c12b8ee7a2ed37eaa0a9446a1bede803c6b8716c5a4ad"
-    },
-    {
-      "seq": 70,
-      "at": "2026-10-30T17:17:35.402Z",
-      "actorId": "U-officer",
-      "actorName": "Rahul Verma (AICTE Officer)",
-      "role": "officer",
-      "action": "LOGIN",
-      "fdrId": null,
-      "details": {},
-      "prevHash": "323ba80422ef8e6e634c12b8ee7a2ed37eaa0a9446a1bede803c6b8716c5a4ad",
-      "hash": "657a667b908c2e59be6815fc308e08a119cb9b16694c2ca45d01311b846b8b8a"
-    },
-    {
-      "seq": 71,
-      "at": "2026-10-30T17:17:40.388Z",
-      "actorId": "U-inst2",
-      "actorName": "Registrar, Sagar College of Engineering",
-      "role": "institution",
-      "action": "LOGIN",
-      "fdrId": null,
-      "details": {},
-      "prevHash": "657a667b908c2e59be6815fc308e08a119cb9b16694c2ca45d01311b846b8b8a",
-      "hash": "a040dc03032cc42fe8e1124a68f34bdc97cee3b81b1cb2fd51a376f0d8312765"
-    },
-    {
-      "seq": 72,
-      "at": "2026-10-30T17:18:14.869Z",
-      "actorId": "U-inst1",
-      "actorName": "Registrar, Bhopal Institute of Technology",
-      "role": "institution",
-      "action": "LOGIN",
-      "fdrId": null,
-      "details": {},
-      "prevHash": "a040dc03032cc42fe8e1124a68f34bdc97cee3b81b1cb2fd51a376f0d8312765",
-      "hash": "2ddf32fd8abd0211b22b3fecf8b5a259cecd44f5e06238a01d1bb8fe58ec5b87"
+      "prevHash": "91a575622bb99efd4e573469d58d1261d87183ba6549a30e9c6684d0ef27cb90",
+      "hash": "dc5300363f447abf676ad42c8cb23c879792e3c5cef2d08cde92570b5a9f984d"
     }
   ],
-  "notifications": [
-    {
-      "id": "N-1",
-      "at": "2026-10-30T10:50:54.679Z",
-      "read": false,
-      "userId": "U-inst1",
-      "fdrId": "FDR-0001",
-      "level": "info",
-      "message": "FDR SBI/BPL/2024/118842 (State Bank of India) matures in 85 day(s). Renew it or request release."
-    },
-    {
-      "id": "N-2",
-      "at": "2026-10-30T10:50:54.687Z",
-      "read": false,
-      "userId": "U-inst1",
-      "fdrId": "FDR-0002",
-      "level": "warning",
-      "message": "FDR PNB/BPL/2023/550931 (Punjab National Bank) matures in 25 day(s). Renew it or request release."
-    },
-    {
-      "id": "N-3",
-      "at": "2026-10-30T10:50:54.690Z",
-      "read": true,
-      "role": "officer",
-      "fdrId": "FDR-0002",
-      "level": "critical",
-      "message": "Escalation: Bhopal Institute of Technology - FDR PNB/BPL/2023/550931 matures in 25 day(s) with no action taken."
-    },
-    {
-      "id": "N-4",
-      "at": "2026-10-30T10:50:54.694Z",
-      "read": false,
-      "userId": "U-inst1",
-      "fdrId": "FDR-0003",
-      "level": "critical",
-      "message": "FDR HDFC/BPL/2022/771204 (HDFC Bank) matures in 5 day(s). Renew it or request release."
-    },
-    {
-      "id": "N-5",
-      "at": "2026-10-30T10:50:54.696Z",
-      "read": true,
-      "role": "officer",
-      "fdrId": "FDR-0003",
-      "level": "critical",
-      "message": "Escalation: Bhopal Institute of Technology - FDR HDFC/BPL/2022/771204 matures in 5 day(s) with no action taken."
-    },
-    {
-      "id": "N-6",
-      "at": "2026-10-30T10:50:54.700Z",
-      "read": true,
-      "role": "admin",
-      "fdrId": "FDR-0003",
-      "level": "critical",
-      "message": "Senior escalation: Bhopal Institute of Technology - FDR HDFC/BPL/2022/771204 matures in 5 day(s) with no action taken."
-    },
-    {
-      "id": "N-7",
-      "at": "2026-10-30T10:50:54.705Z",
-      "read": false,
-      "userId": "U-inst2",
-      "fdrId": "FDR-0004",
-      "level": "critical",
-      "message": "FDR BOI/SGR/2022/230017 (Bank of India) matured 3 day(s) ago. Renew it or request release."
-    },
-    {
-      "id": "N-8",
-      "at": "2026-10-30T10:50:54.708Z",
-      "read": true,
-      "role": "officer",
-      "fdrId": "FDR-0004",
-      "level": "critical",
-      "message": "Escalation: Sagar College of Engineering - FDR BOI/SGR/2022/230017 matured 3 day(s) ago with no action taken."
-    },
-    {
-      "id": "N-9",
-      "at": "2026-10-30T10:50:54.713Z",
-      "read": true,
-      "role": "admin",
-      "fdrId": "FDR-0004",
-      "level": "critical",
-      "message": "Senior escalation: Sagar College of Engineering - FDR BOI/SGR/2022/230017 matured 3 day(s) ago with no action taken."
-    },
-    {
-      "id": "N-10",
-      "at": "2026-10-30T10:50:54.716Z",
-      "read": true,
-      "role": "officer",
-      "fdrId": "FDR-0004",
-      "level": "critical",
-      "message": "Overdue: Sagar College of Engineering - FDR BOI/SGR/2022/230017 matured 3 day(s) ago with no action taken."
-    },
-    {
-      "id": "N-11",
-      "at": "2026-10-30T15:28:52.735Z",
-      "read": true,
-      "role": "officer",
-      "fdrId": "FDR-0008",
-      "level": "info",
-      "message": "New FDR T-001 from Bhopal Institute of Technology awaits verification."
-    },
-    {
-      "id": "N-12",
-      "at": "2026-10-30T15:28:52.790Z",
-      "read": true,
-      "role": "officer",
-      "fdrId": "FDR-0009",
-      "level": "warning",
-      "message": "New FDR T-002 from Bhopal Institute of Technology awaits verification (flagged)."
-    },
-    {
-      "id": "N-13",
-      "at": "2026-10-30T15:28:52.809Z",
-      "read": false,
-      "userId": "U-inst1",
-      "fdrId": "FDR-0008",
-      "level": "info",
-      "message": "FDR T-001 was verified by the AICTE officer; bank confirmation is next."
-    },
-    {
-      "id": "N-14",
-      "at": "2026-10-30T15:28:53.122Z",
-      "read": false,
-      "userId": "U-inst1",
-      "fdrId": "FDR-0008",
-      "level": "info",
-      "message": "FDR T-001 is now Verified by bank and ACTIVE."
-    },
-    {
-      "id": "N-15",
-      "at": "2026-10-30T15:28:53.123Z",
-      "read": false,
-      "userId": "U-inst1",
-      "fdrId": "FDR-0008",
-      "level": "info",
-      "message": "FDR T-001 (SBI) matures in 62 day(s). Renew it or request release."
-    },
-    {
-      "id": "N-16",
-      "at": "2026-10-30T15:28:53.141Z",
-      "read": true,
-      "role": "officer",
-      "fdrId": "FDR-0008",
-      "level": "warning",
-      "message": "Release requested for T-001 by Bhopal Institute of Technology - PREMATURE (before maturity)."
-    },
-    {
-      "id": "N-17",
-      "at": "2026-10-30T15:28:53.156Z",
-      "read": false,
-      "userId": "U-inst1",
-      "fdrId": "FDR-0008",
-      "level": "info",
-      "message": "Release of T-001: recommended by officer, awaiting final approval."
-    },
-    {
-      "id": "N-18",
-      "at": "2026-10-30T15:28:53.156Z",
-      "read": true,
-      "role": "admin",
-      "fdrId": "FDR-0008",
-      "level": "info",
-      "message": "Release of T-001 (Bhopal Institute of Technology) awaits your final approval."
-    },
-    {
-      "id": "N-19",
-      "at": "2026-10-30T15:28:53.172Z",
-      "read": false,
-      "userId": "U-inst1",
-      "fdrId": "FDR-0008",
-      "level": "info",
-      "message": "Release of T-001: approved - FDR closed / refund released."
-    }
-  ],
+  "notifications": [],
   "config": {
     "alertDays": [
       90,

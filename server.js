@@ -6,7 +6,7 @@ const bank = require('./src/bank'), alerts = require('./src/alerts');
 store.load(); require('./src/seed').seed();
 
 const PORT = process.env.PORT || 3000, SECRET = process.env.JWT_SECRET || 'dev-secret-change-me';
-const UP = path.join(__dirname, 'uploads'); fs.mkdirSync(UP, { recursive: true });
+const UP = store.UPLOAD_DIR; try { fs.mkdirSync(UP, { recursive: true }); } catch {}
 const app = express(); app.use(express.json());
 const db = () => store.db;
 const fail = (s, m) => { const e = new Error(m); e.status = s; throw e; };
@@ -66,7 +66,12 @@ app.get('/api/fdrs/:id', wrap((req, res) => res.json(pub(getFdr(req)))));
 app.get('/api/fdrs/:id/history', wrap((req, res) => { const f = getFdr(req); res.json(db().audit.filter(a => a.fdrId === f.id)); }));
 app.get('/api/fdrs/:id/file', wrap((req, res) => {
   const f = getFdr(req); if (!f.file) fail(404, 'No document attached.');
-  const p = path.join(UP, f.file.storedName); if (!fs.existsSync(p)) fail(404, 'Stored file is missing.');
+  let p = path.join(UP, f.file.storedName);
+  if (!fs.existsSync(p)) {
+    const fallback = path.join(__dirname, 'uploads', f.file.storedName);
+    if (fs.existsSync(fallback)) p = fallback;
+    else fail(404, 'Stored file is missing.');
+  }
   if (audit.sha(fs.readFileSync(p)) !== f.file.sha256) { audit.log(req.user, 'FILE_TAMPER_DETECTED', f.id, {}); fail(409, 'Integrity check failed: file hash does not match the hash recorded at upload.'); }
   res.setHeader('Content-Disposition', `inline; filename="${f.file.originalName.replace(/"/g, '')}"`);
   res.type(f.file.mime || 'application/octet-stream').sendFile(p);

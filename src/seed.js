@@ -1,14 +1,16 @@
 // Demo data. Passwords for all demo users: demo123
 const bcrypt = require('bcryptjs'), fs = require('fs'), path = require('path'), crypto = require('crypto');
 const store = require('./store'), audit = require('./audit');
-const UP = path.join(__dirname, '..', 'uploads');
+const UP = store.UPLOAD_DIR;
 const day = n => new Date(Date.now() + n * 864e5).toISOString().slice(0, 10);
 
 function samplePdf(text) {
   const body = `%PDF-1.4\n1 0 obj<</Type/Catalog/Pages 2 0 R>>endobj\n2 0 obj<</Type/Pages/Kids[3 0 R]/Count 1>>endobj\n3 0 obj<</Type/Page/Parent 2 0 R/MediaBox[0 0 400 200]/Contents 4 0 R/Resources<</Font<</F1 5 0 R>>>>>>endobj\n4 0 obj<</Length 60>>stream\nBT /F1 14 Tf 20 100 Td (${text}) Tj ET\nendstream endobj\n5 0 obj<</Type/Font/Subtype/Type1/BaseFont/Helvetica>>endobj\ntrailer<</Root 1 0 R>>\n%%EOF`;
   const name = 'doc-' + crypto.randomBytes(4).toString('hex') + '.pdf';
-  fs.mkdirSync(UP, { recursive: true });
-  fs.writeFileSync(path.join(UP, name), body);
+  try {
+    fs.mkdirSync(UP, { recursive: true });
+    fs.writeFileSync(path.join(UP, name), body);
+  } catch {}
   return { originalName: 'FDR-scan.pdf', storedName: name, size: body.length, mime: 'application/pdf', sha256: crypto.createHash('sha256').update(body).digest('hex') };
 }
 
