@@ -22,7 +22,7 @@ async function api(p, o = {}) {
   if (!r.ok) throw new Error(d.error || 'Request failed'); return d;
 }
 function toast(m, bad) { const t = $('#toast'); t.textContent = m; t.className = 'show' + (bad ? ' bad' : ''); clearTimeout(toast.t); toast.t = setTimeout(() => t.className = '', 3500); }
-function logout() { localStorage.removeItem('tok'); me = null; location.hash = '#/login'; render(); }
+function logout() { localStorage.removeItem('tok'); localStorage.removeItem('user'); me = null; location.hash = '#/login'; render(); }
 
 // modal form: fields = [{name,label,type,required,options}] -> resolves object or null
 function ask(title, fields, okText = 'Save') {
@@ -96,6 +96,7 @@ function bindLogin() {
     try {
       const r = await api('/auth/login', { method: 'POST', body: { email: $('#em').value, password: $('#pw').value } });
       localStorage.setItem('tok', r.token);
+      localStorage.setItem('user', JSON.stringify(r.user));
       me = r.user;
       location.hash = '#/dashboard';
       render();
@@ -232,8 +233,20 @@ async function render() {
   const app = $('#app'), h = location.hash || '#/dashboard';
   if (!localStorage.getItem('tok')) { app.innerHTML = loginView(); bindLogin(); return; }
   try {
-    if (!me) me = await api('/me');
-    try { const n = await api('/notifications'); unread = n.filter(x => !x.read).length; } catch { }
+    if (!me) {
+      try { me = JSON.parse(localStorage.getItem('user')); } catch {}
+      if (!me) me = await api('/me');
+    }
+    // Fetch notifications in parallel without blocking page rendering
+    api('/notifications').then(n => {
+      unread = n.filter(x => !x.read).length;
+      const b = $('.badge-n');
+      if (b) {
+        if (unread) { b.textContent = unread; b.style.display = ''; }
+        else { b.style.display = 'none'; }
+      }
+    }).catch(() => {});
+
     const [, route, arg] = h.split('/');
     if (route === 'login') { location.hash = '#/dashboard'; return; }
     if (route === 'fdrs') { app.innerHTML = await listView(); const l = window.__l; bindList(l); bindRows(); }

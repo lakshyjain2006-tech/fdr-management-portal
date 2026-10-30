@@ -234,7 +234,7 @@ app.post('/api/admin/users/:id/active', roleIs('admin'), wrap((req, res) => {
 }));
 // There is intentionally NO delete endpoint for FDRs or audit entries.
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public'), { maxAge: '1h', etag: true }));
 app.use((err, req, res, next) => { if (err.status !== 400 && err.status !== 409 && err.status !== 403 && err.status !== 404 && err.status !== 401) console.error(err); res.status(err.status || (err.code === 'LIMIT_FILE_SIZE' ? 400 : 500)).json({ error: err.code === 'LIMIT_FILE_SIZE' ? 'File is larger than 5 MB.' : err.message }); });
 
 if (require.main === module) {

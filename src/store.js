@@ -37,8 +37,7 @@ function load() {
 function save() {
   try {
     fs.mkdirSync(path.dirname(FILE), { recursive: true });
-    fs.writeFileSync(FILE + '.tmp', JSON.stringify(db, null, 2));
-    fs.renameSync(FILE + '.tmp', FILE);
+    fs.writeFileSync(FILE, JSON.stringify(db));
   } catch (err) {
     console.warn('Notice: Could not persist to disk (' + err.message + '). Data remains in memory.');
   }
