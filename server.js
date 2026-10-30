@@ -7,7 +7,15 @@ store.load(); require('./src/seed').seed();
 
 const PORT = process.env.PORT || 3000, SECRET = process.env.JWT_SECRET || 'dev-secret-change-me';
 const UP = store.UPLOAD_DIR; try { fs.mkdirSync(UP, { recursive: true }); } catch {}
-const app = express(); app.use(express.json());
+const app = express();
+app.use((req, res, next) => {
+  if (req.url === '/server.js' || req.url.startsWith('/server.js')) {
+    const orig = req.headers['x-forwarded-url'] || req.headers['x-matched-path'] || req.headers['x-invoke-path'];
+    if (orig) req.url = orig;
+  }
+  next();
+});
+app.use(express.json());
 const db = () => store.db;
 const fail = (s, m) => { const e = new Error(m); e.status = s; throw e; };
 const wrap = fn => async (req, res, next) => { try { await fn(req, res); } catch (e) { next(e); } };
