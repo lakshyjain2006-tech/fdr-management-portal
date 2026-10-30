@@ -1,3 +1,14 @@
 {
-  "regions": ["bom1"]
+  "regions": ["bom1"],
+  "headers": [
+    {
+      "source": "/(style\\.css|app\\.js)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, stale-while-revalidate=604800"
+        }
+      ]
+    }
+  ]
 }

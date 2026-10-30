@@ -113,8 +113,7 @@ function fdrTable(list, extra) {
 }
 function bindRows() { document.querySelectorAll('tr.click').forEach(r => { const go = () => location.hash = '#/fdr/' + r.dataset.id; r.onclick = go; r.onkeydown = e => e.key === 'Enter' && go(); }); }
 
-async function dashboardView() {
-  const d = await api('/dashboard');
+function renderDashboardHTML(d) {
   const n = d.needsAction;
   return shell(`<div class="head"><div><h1>${n.length ? `${n.length} item${n.length > 1 ? 's' : ''} need${n.length > 1 ? '' : 's'} your action today` : 'Nothing needs your action today'}</h1><p class="sub">Only exceptions are listed here. Everything else is on track.</p></div>${me.role === 'institution' ? '<a class="btn" href="#/new">Submit an FDR</a>' : ''}</div>
   <div class="grid g4"><div class="card"><div class="stat">${d.totals.records}<small>Records</small></div></div><div class="card"><div class="stat">${d.totals.active}<small>Active FDRs</small></div></div>
@@ -123,12 +122,58 @@ async function dashboardView() {
   <div class="card"><h2>Maturing within 90 days</h2>${fdrTable(d.expiring)}</div>`, 'dashboard');
 }
 
-async function listView() {
-  const l = await api('/fdrs');
+async function dashboardView() {
+  const key = 'cache_dash_' + (me ? me.id : '');
+  const cached = sessionStorage.getItem(key);
+  if (cached) {
+    try {
+      const d = JSON.parse(cached);
+      api('/dashboard').then(fresh => {
+        sessionStorage.setItem(key, JSON.stringify(fresh));
+        const cur = location.hash || '#/dashboard';
+        if (cur === '#/dashboard') {
+          $('#app').innerHTML = renderDashboardHTML(fresh);
+          bindRows();
+          const o = $('#out'); if (o) o.onclick = logout;
+        }
+      }).catch(() => {});
+      return renderDashboardHTML(d);
+    } catch {}
+  }
+  const d = await api('/dashboard');
+  if (me) sessionStorage.setItem(key, JSON.stringify(d));
+  return renderDashboardHTML(d);
+}
+
+function renderListHTML(l) {
   window.__l = l;
   return shell(`<div class="head"><div><h1>${me.role === 'institution' ? 'My FDRs' : 'All FDRs'}</h1><p class="sub">${l.length} record(s). Select a row to open it.</p></div>
   <div><label for="flt" style="margin:0">Filter by status</label><select id="flt"><option value="">All</option>${Object.entries(STATUS).map(([k, v]) => `<option value="${k}">${v[0]}</option>`).join('')}</select></div></div>
   <div class="card" id="lst">${fdrTable(l)}</div>`, 'fdrs');
+}
+
+async function listView() {
+  const key = 'cache_fdrs_' + (me ? me.id : '');
+  const cached = sessionStorage.getItem(key);
+  if (cached) {
+    try {
+      const l = JSON.parse(cached);
+      api('/fdrs').then(fresh => {
+        sessionStorage.setItem(key, JSON.stringify(fresh));
+        const cur = location.hash || '#/dashboard';
+        if (cur === '#/fdrs') {
+          $('#app').innerHTML = renderListHTML(fresh);
+          bindList(fresh);
+          bindRows();
+          const o = $('#out'); if (o) o.onclick = logout;
+        }
+      }).catch(() => {});
+      return renderListHTML(l);
+    } catch {}
+  }
+  const l = await api('/fdrs');
+  if (me) sessionStorage.setItem(key, JSON.stringify(l));
+  return renderListHTML(l);
 }
 function bindList(l) { $('#flt').onchange = e => { $('#lst').innerHTML = fdrTable(l.filter(f => !e.target.value || f.status === e.target.value)); bindRows(); }; }
 
